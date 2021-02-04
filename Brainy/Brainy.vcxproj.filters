@@ -1,17 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Исходные файлы">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Brainy">
+      <UniqueIdentifier>{e422f09e-c6d0-4908-929d-51cf4c49c13d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Brainy\Network">
+      <UniqueIdentifier>{870dbf47-360d-46bd-957b-4aa39a3b8e9e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Brainy\Network\Layer">
+      <UniqueIdentifier>{c3c5f10f-b6a9-4006-b618-758cfa303af1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Brainy\Network\Layer\Neuron">
+      <UniqueIdentifier>{d045ade4-b607-4113-951c-cb09559edee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Brainy\Network\Synapse">
+      <UniqueIdentifier>{7e8fc1ec-01fe-4286-af9f-fdea79c42861}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Neuron.cpp">
+      <Filter>Brainy\Network\Layer\Neuron</Filter>
+    </ClCompile>
+    <ClCompile Include="Synapse.cpp">
+      <Filter>Brainy\Network\Synapse</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Neuron.h">
+      <Filter>Brainy\Network\Layer\Neuron</Filter>
+    </ClInclude>
+    <ClInclude Include="Synapse.h">
+      <Filter>Brainy\Network\Synapse</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
